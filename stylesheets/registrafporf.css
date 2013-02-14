@@ -1,0 +1,73 @@
+#titrerf{
+font-family:arial;
+font-size:25px;
+
+}
+.btneliminar{
+border-radius:5px;
+background-color:#EA414C;
+}
+
+tr, td, th {
+    border: 1px solid #CCCCCC;
+    padding: 6px;
+	font-family:arial;
+}
+.descripcion{
+  padding: 3px;
+  font-family:arial;
+  background-color:#EBF4EB;
+  border-radius:5px;
+}
+
+.tipo{
+ padding: 3px;
+ font-family:arial;
+  background-color:#EBF4EB;
+    border-radius:5px;
+
+}
+.valores{
+ padding: 3px;
+ font-family:arial;
+  background-color:#EBF4EB;
+ border-radius:5px;
+}
+#campos{
+background-color:#98E27C;
+  border-radius:5px;
+}
+#selec{
+padding: 3px;
+ font-family:arial;
+  background-color:#EBF4EB;
+ border-radius:5px;
+
+}
+
+#newp{
+padding: 3px;
+ font-family:arial;
+  background-color:#5895EF;
+ border-radius:5px;
+
+}
+#guardar{
+padding: 3px;
+ font-family:arial;
+  background-color:#EFB058;
+ border-radius:5px;
+
+}
+#cambioform{
+padding: 3px;
+ font-family:arial;
+  background-color:#BFEF58;
+ border-radius:5px;
+
+}
+
+
+
+
+
