@@ -1,0 +1,49 @@
+create table evaluaciones
+(
+ideval integer auto_increment,
+nombre varchar(40) not null default '',
+tema varchar(20) not null default '',
+estado char(1) not null default '1',
+horacreacion datetime not null,
+logincreacion varchar(16) not null default '',
+primary key(ideval)
+);
+
+
+create table preguntas
+( idpreg integer not null auto_increment,
+ideval integer not null,
+hora datetime,
+estado char(1) not null default '1',
+tipo char(1) not null default 'S',
+pregunta varchar(2000) not null default '',
+logincrea varchar(16) not null default '',
+numop integer,
+primary key(idpreg)
+);
+
+create table opciones
+( idpreg integer not null,
+idopcion integer not null auto_increment,
+respuesta varchar(80) not null default '',
+puntaje smallint not null default '0',
+primary key(idopcion)
+);
+
+
+Create table resultados 
+(  idres integer not null auto_increment,
+  ideval integer,
+  login varchar(16),
+  hora datetime,
+primary key(idres)
+);
+
+Create table resultados2 
+( idres integer,
+   idpreg integer,
+  idopcion integer,
+  login varchar(16),
+  hora datetime
+);
+
