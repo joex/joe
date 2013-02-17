@@ -1,0 +1,71 @@
+#titrerf{
+font-family:arial;
+font-size:25px;
+
+}
+#titulo{
+font-family:arial;
+font-size:25px;
+
+}
+
+.desactivar{
+border-radius:5px;
+background-color:#EA414C;
+}
+
+tr, td, th{
+    border: 1px solid #CCCCCC;
+    padding: 6px;
+	font-family:arial;
+	 background-color:#BFEF58;
+}
+
+}
+#table{
+background-color:#98E27C;
+  border-radius:5px;
+}
+
+
+
+.editar{
+background-color:#5895EF;
+ border-radius:5px;
+
+}
+#nuevo{
+padding: 3px;
+ font-family:arial;
+  background-color:#EFB058;
+ border-radius:5px;
+
+}
+#cambioform{
+padding: 3px;
+ font-family:arial;
+  background-color:#BFEF58;
+ border-radius:5px;
+
+}
+.iniciar{
+padding: 3px;
+ font-family:arial;
+  background-color:#EFB058;
+ border-radius:5px;
+
+}
+
+
+.campo {
+    background-color: #CCFFCC 	;
+    border-radius: 5px 5px 5px 5px;
+    width: 500px;
+}
+.texto {
+    font-family: arial;
+    font-size: 18px;
+}
+#rec { background-color: #42aaff ;
+
+}
