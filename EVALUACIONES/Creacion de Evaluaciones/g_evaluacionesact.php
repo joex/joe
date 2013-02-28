@@ -39,7 +39,8 @@ echo "pregunta:".$pst_preg[$i];
 
 
 
-
+##############################################################
+/*
 $elimeval="DELETE FROM evaluaciones WHERE ideval='$pst_idevalu'";
 mysql_query($elimeval)or die(mysql_error());
 $elimpreg="SELECT idpreg FROM preguntas  WHERE ideval='$pst_idevalu'";
@@ -54,7 +55,9 @@ mysql_query($elimop)or die(mysql_error());
 $elipreg="DELETE FROM preguntas WHERE ideval='$pst_idevalu'";
 mysql_query($elipreg)or die(mysql_error());
 
+*/
 
+##############################################
 
 $inserteval="INSERT INTO evaluaciones (nombre,tema,estado,horacreacion,logincreacion) VALUES ('$pst_nombre','$pst_tema','1',now(),'joujou')";
 mysql_query($inserteval)or die(mysql_error());
