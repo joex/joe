@@ -1,7 +1,7 @@
 <?php
 $host= "localhost";
-$user="root";
-$pass="root";
+$user="joe";
+$pass="joe";
 $db="joe";
 $conexion = mysql_connect($host, $user, $pass);
 mysql_select_db($db,$conexion);
