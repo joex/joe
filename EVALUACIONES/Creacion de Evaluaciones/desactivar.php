@@ -11,8 +11,7 @@ $name="";
 
 while($fetch=mysql_fetch_assoc($psql))
 {//$name.='<tr><td>'.$fetch["nombre"].'</td><td>'.$fetch["tema"].'</td><td><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"></td></tr>';
- $name.='<tr class="'.'clase'.$fetch["estado"].'"><td>'.$fetch["nombre"].'</td><td>'.$fetch["tema"].'</td><td><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"><input type="hidden" name="oc[]" value="'.$fetch["ideval"].'"></td></tr>';
-}
+ $name.='<tr class="'.'clase'.$fetch["estado"].'"><td class="'.'clase'.$fetch["estado"].'">'.$fetch["nombre"].'</td><td class="'.'clase'.$fetch["estado"].'">'.$fetch["tema"].'</td><td class="'.'clase'.$fetch["estado"].'"><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"><input type="hidden" name="oc[]" value="'.$fetch["ideval"].'"></td></tr>';}
 echo $name;
 
 ?>
