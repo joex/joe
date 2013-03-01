@@ -26,14 +26,16 @@ border: 1px solid #CCCCCC;
     padding: 6px;
 	font-family:arial;
 	 background-color:#C0C0C0;
-}
+ border-radius:5px;
+	 }
 
 .clase1 {
 border: 1px solid #CCCCCC;
     padding: 6px;
 	font-family:arial;
 	 background-color:#BFEF58;
-}
+ border-radius:5px;
+	 }
 
 }
 #table{
