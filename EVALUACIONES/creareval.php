@@ -4,9 +4,15 @@ $sql="SELECT nombre,tema,ideval,estado from evaluaciones ";
 $psql=mysql_query($sql)or die(mysql_error());
 $importar="";
 $tema="";
-while($fetch=mysql_fetch_assoc($psql))
-{$importar .='<tr class="'.'clase'.$fetch["estado"].'"><td class="'.'clase'.$fetch["estado"].'">'.$fetch["nombre"].'</td><td class="'.'clase'.$fetch["estado"].'">'.$fetch["tema"].'</td><td class="'.'clase'.$fetch["estado"].'"><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"><input type="hidden" name="oc[]" value="'.$fetch["ideval"].'"></td></tr>';
-}
+while($fetch=mysql_fetch_assoc($psql)){
+//$name.='<tr><td>'.$fetch["nombre"].'</td><td>'.$fetch["tema"].'</td><td><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"></td></tr>';
+ if($fetch["estado"]==1){
+ $importar.='<tr class="'.'clase'.$fetch["estado"].'"><td class="'.'clase'.$fetch["estado"].'">'.$fetch["nombre"].'</td><td class="'.'clase'.$fetch["estado"].'">'.$fetch["tema"].'</td><td class="'.'clase'.$fetch["estado"].'"><input type="button" class="editar" value="EDITAR"><input type="button" class="desactivar" value="DESACTIVAR"><input type="hidden" name="oc[]" value="'.$fetch["ideval"].'"></td></tr>';
+ }
+ else if($fetch["estado"]==0){
+ $importar.='<tr class="'.'clase'.$fetch["estado"].'"><td class="'.'clase'.$fetch["estado"].'">'.$fetch["nombre"].'</td><td class="'.'clase'.$fetch["estado"].'">'.$fetch["tema"].'</td><td class="'.'clase'.$fetch["estado"].'"><input type="button" class="activar" value="ACTIVAR"><input type="hidden" name="oc[]" value="'.$fetch["ideval"].'"></td></tr>';
+ }
+ } 
 
 ?>
 <html>
