@@ -14,8 +14,22 @@ border-radius:5px;
 background-color:#EA414C;
 }
 
-tr, td, th{
+ th{
     border: 1px solid #CCCCCC;
+    padding: 6px;
+	font-family:arial;
+	 background-color:#BFEF58;
+}
+
+.0{
+border: 1px solid #CCCCCC;
+    padding: 6px;
+	font-family:arial;
+	 background-color:#BFEF58;
+}
+
+.1 {
+border: 1px solid #CCCCCC;
     padding: 6px;
 	font-family:arial;
 	 background-color:#BFEF58;

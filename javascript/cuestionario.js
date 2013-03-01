@@ -15,21 +15,32 @@ var n2= $(".campo").length;
 var n1=items.length;
 var count=n1/2;
 
+var reply=confirm("ESTA SEGURO DE TERMINAR LA EVALUACION?");
+if (reply==true){
 if(count>=n2)
-{$.ajax({
+{
+$.ajax({
       type: 'POST',
 	  url: 'rec_eval.php',
 	  data: {datos: items, id: idg},
-	  success: function(){
+	  success: function(data){
       alert('GRABADO');
-	  window.location="load_c.php";
+	  alert(data);
+	  window.location="../iniceval.php";
 	  }
 });
-
 }
+
+
 else{
 alert('COMPLETE TODOS LOS CAMPOS');
 }
+}
+ 
+else{}
+
+
+
 
 });
 });
