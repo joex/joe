@@ -1,9 +1,0 @@
-table{table-layout:fixed; width: 800px;}	
-	tbody tr{cursor: pointer; height: 40px; background-color: #FDFDFD;}
-	tbody tr:hover{color: green; font-weight:bold; background-color: #D7FDCC;}
-	td{text-align:center; overflow:hidden; white-space:nowrap;}
-	#category { margin-right:20px; }
-	[for="category"] { margin-left:40px; }
-	.detalle{padding-left: 10px;}
-	#headtable{height: 40px; background-color: #00DF00;}
-	label, #headtable{ font-size: large; }
