@@ -1,0 +1,33 @@
+#selec{
+padding: 3px;
+ font-family:arial;
+  background-color:#EBF4EB;
+ border-radius:5px;
+
+}
+
+#selecform{
+padding: 3px;
+ font-family:arial;
+  background-color:#BFEF58;
+ border-radius:5px;
+
+}
+#titmurf{
+font-family:arial;
+font-size:25px
+
+}
+
+.titcamp{
+font-family:arial;
+font-size:18px;
+
+}
+fieldset{
+
+width:500px;
+ border-radius:5px;
+  background-color:#EAFCF2;
+}
+

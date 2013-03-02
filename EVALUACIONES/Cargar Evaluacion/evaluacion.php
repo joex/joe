@@ -24,7 +24,7 @@ $opciones="";
 	if($data2[2]=='r'){
 	
 	while($data3=mysql_fetch_row($res3)){
-    $opciones .='<input type="radio"  name="'.$data2[0].'" value="'.$data3[0].'" class="'.'class'.$data2[2].'">'.$data3[1].'</br>';
+    $opciones .='<input type="radio"  name="'.$data2[0].'" value="'.$data3[0].'" class="'.'class'.$data2[2].'"><label class="lab">'.$data3[1].'</label></br>';
     }
 	$opciones='<div>'.$opciones.'</div>';
     }
@@ -32,7 +32,7 @@ $opciones="";
 	else {
 	
 	while($data3=mysql_fetch_row($res3)){
-    $opciones .='<input type="checkbox"  name="'.$data2[0].'" value="'.$data3[0].'" class="'.'class'.$data2[2].'">'.$data3[1].'</br>';
+    $opciones .='<input type="checkbox"  name="'.$data2[0].'" value="'.$data3[0].'" class="'.'class'.$data2[2].'"><label class="lab">'.$data3[1].'</label></br>';
     }
 	$opciones='<div>'.$opciones.'</div>';
     }
@@ -54,7 +54,7 @@ echo '<input type="hidden"  id="id_eval" value="'.$_GET["iniciar_eval"].'">'
 <script type="text/javascript" src="../../javascript/cuestionario.js" ></script>
 </head>
 <body>
-<div id="titulo"><?php echo $nombre ;?></div>
+<div id="titulo"><?php echo $nombre ;?></div></br>
 <form>
 <?php for($i=0;$i<$c;$i++) {?>
 <fieldset class="campo"><?php echo $total[0][$i] ?>
